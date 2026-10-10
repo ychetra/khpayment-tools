@@ -1,0 +1,2 @@
+import { z } from 'zod';
+export const apiErrorSchema = z.object({ error: z.object({ code: z.string(), message: z.string(), requestId: z.string(), fields: z.array(z.string()).optional(), paymentId: z.uuid().optional() }).strict() }).strict();

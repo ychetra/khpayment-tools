@@ -1,0 +1,17 @@
+{
+  "name": "khpayment",
+  "version": "0.1.0-beta.1",
+  "description": "Integrate checkout, bounded payment status and signed notifications with a shared skill and local MCP.",
+  "author": {
+    "name": "KHPayment"
+  },
+  "skills": "./skills/",
+  "mcpServers": "./mcp-codex.json",
+  "interface": {
+    "displayName": "KHPayment",
+    "shortDescription": "Build and verify your payment integration.",
+    "category": "Coding",
+    "brandColor": "#2a2a27",
+    "composerIcon": "./assets/khpayment-mark.svg"
+  }
+}

@@ -1,0 +1,39 @@
+KHPayment Tools Free-Use License 1.0
+Copyright (c) 2026 KHPayment. All rights reserved.
+
+1. Free use. You may install, run and make unchanged copies of the KHPayment
+SDK, CLI, MCP server and integration plugin (the Software), at no charge,
+for personal or commercial use, including integration into your applications.
+You may redistribute unchanged copies with this license and all notices intact.
+
+2. No modification of the tools. Except as expressly permitted below, you may
+not modify, adapt, translate, relicense or distribute modified versions of the
+Software, including its library code, executables, plugin skills and manifests.
+All rights not expressly granted are reserved. Rights that applicable law does
+not permit us to restrict are unaffected.
+
+3. Your integration. You may configure the Software through its documented
+settings and interfaces. You may freely copy, edit and use the example apps,
+documentation code snippets and code generated for your application, including
+commercially. This exception does not permit changing the SDK, CLI, MCP server
+or plugin itself. Your independently written application remains yours.
+
+4. Third-party software. Dependencies and bundled third-party components retain
+their own licenses. This license does not restrict rights granted by those
+licenses. See THIRD_PARTY_NOTICES.txt where components are bundled.
+
+5. Service and branding. This license covers these tools only. It does not grant
+access to an account, paid service, payment provider or live payment processing,
+or permission to imply endorsement by KHPayment, a bank or a payment network.
+Service access and provider authorization have separate requirements.
+
+6. No warranty. THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE
+AND NONINFRINGEMENT. TO THE MAXIMUM EXTENT PERMITTED BY LAW, THE COPYRIGHT
+HOLDERS SHALL NOT BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY ARISING
+FROM THE SOFTWARE OR ITS USE.
+
+7. Termination. The permissions in this license terminate if you violate it.
+Upon termination, stop using and distributing the Software and remove your
+copies, except where retention is required by law. Third-party license rights
+and ownership of your independently written application are unaffected.

@@ -1,0 +1,31 @@
+{
+  "name": "@ychetra/khpayment-node",
+  "version": "0.1.0-beta.1",
+  "description": "Server-side Node.js and TypeScript client for the KHPayment merchant-link integration API.",
+  "type": "module",
+  "license": "SEE LICENSE IN LICENSE",
+  "engines": {
+    "node": "^22.23.3 || ^24.21.0"
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist/**/*.js",
+    "dist/**/*.d.ts",
+    "README.md",
+    "CHANGELOG.md",
+    "LICENSE"
+  ],
+  "sideEffects": false,
+  "dependencies": {
+    "zod": "4.4.3"
+  },
+  "publishConfig": {
+    "access": "public",
+    "tag": "beta"
+  }
+}

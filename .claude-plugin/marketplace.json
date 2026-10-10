@@ -1,0 +1,13 @@
+{
+  "name": "khpayment",
+  "owner": {
+    "name": "KHPayment"
+  },
+  "plugins": [
+    {
+      "name": "khpayment",
+      "source": "./plugins/khpayment",
+      "description": "Integrate checkout, bounded payment status and signed notifications with a shared skill and local MCP."
+    }
+  ]
+}
