@@ -11,6 +11,6 @@
   },
   "dependencies": {
     "pg": "8.23.0",
-    "@khpayment/node": "file:vendor/khpayment-node-1.0.0.tgz"
+    "@khpayment/node": "file:vendor/khpayment-node-1.0.1.tgz"
   }
 }

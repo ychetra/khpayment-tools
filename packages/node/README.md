@@ -5,7 +5,7 @@ KHPayment is an independent merchant-link integration service, not an official
 ABA SDK. A signed event confirms our recorded observation, not bank settlement.
 
 ```sh
-npm install @khpayment/node@1.0.0
+npm install @khpayment/node@1.0.1
 ```
 
 ```js

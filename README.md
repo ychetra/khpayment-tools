@@ -4,10 +4,10 @@ One integration. Your server, terminal or coding agent.
 
 | Tool | Package | Install |
 | --- | --- | --- |
-| Node.js / TypeScript | `@khpayment/node` | `npm install @khpayment/node@1.0.0` |
-| CLI | `@khpayment/cli` | `npm install --save-dev @khpayment/cli@1.0.0` |
-| MCP | `@khpayment/mcp` | `npm install --save-dev @khpayment/mcp@1.0.0` |
-| Codex & Claude Code plugin | `@khpayment/plugin` | `npm install --save-dev @khpayment/plugin@1.0.0` |
+| Node.js / TypeScript | `@khpayment/node` | `npm install @khpayment/node@1.0.1` |
+| CLI | `@khpayment/cli` | `npm install --save-dev @khpayment/cli@1.0.1` |
+| MCP | `@khpayment/mcp` | `npm install --save-dev @khpayment/mcp@1.0.1` |
+| Codex & Claude Code plugin | `@khpayment/plugin` | `npm install --save-dev @khpayment/plugin@1.0.1` |
 
 Developer tools. Node 22.23.3 or 24.21.0 and
 later patches in those majors. Server-side ESM; API keys stay on your server.
@@ -74,7 +74,7 @@ are separate from installing these tools.
 ## Upgrade from the earlier packages
 
 The earlier personal-scope packages remain available and unchanged. Move from
-`@ychetra/khpayment-node@beta` to `@khpayment/node@1.0.0`,
+`@ychetra/khpayment-node@beta` to `@khpayment/node@1.0.1`,
 and change your server-side SDK imports to `@khpayment/node`. The SDK
 API, stored order mappings and idempotency keys remain compatible.
 

@@ -2,7 +2,7 @@ import { pathToFileURL } from 'node:url';
 import { realpathSync } from 'node:fs';
 import { createClient, KhPaymentError } from './sdk/index.js';
 import { createPaymentSchema } from './contracts/index.js';
-const version = '1.0.0';
+const version = '1.0.1';
 const help = 'Usage: khpayment usage | payments get ID | payments status ID | payments create --amount DECIMAL --currency KHR|USD --idempotency-key UNIQUE [--return-url URL] [--remark TEXT] [--transaction-id REF] [--json]\nSet KHPAYMENT_BASE_URL and KHPAYMENT_API_KEY in your process environment. Never pass a key as an argument.\nKHPAYMENT_EXPECTED_ENVIRONMENT defaults to test. Use --version to print the tool version.\n';
 export async function runCli(argv, deps) {
     if (argv.includes('--help')) {

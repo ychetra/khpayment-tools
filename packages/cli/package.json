@@ -1,6 +1,6 @@
 {
   "name": "@khpayment/cli",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "type": "module",
   "license": "SEE LICENSE IN LICENSE",
   "engines": {
@@ -23,5 +23,20 @@
   ],
   "dependencies": {
     "zod": "4.4.3"
-  }
+  },
+  "homepage": "https://khpayment.com",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ychetra/khpayment-tools.git",
+    "directory": "packages/cli"
+  },
+  "keywords": [
+    "khpayment",
+    "khqr",
+    "cambodia",
+    "payments",
+    "payment-integration",
+    "cli",
+    "developer-tools"
+  ]
 }

@@ -1,6 +1,6 @@
 {
   "name": "@khpayment/plugin",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "type": "module",
   "license": "SEE LICENSE IN LICENSE",
   "engines": {
@@ -18,5 +18,21 @@
     "README.md",
     "LICENSE",
     "THIRD_PARTY_NOTICES.txt"
+  ],
+  "homepage": "https://khpayment.com",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ychetra/khpayment-tools.git"
+  },
+  "keywords": [
+    "khpayment",
+    "khqr",
+    "cambodia",
+    "payments",
+    "payment-integration",
+    "claude-code",
+    "codex",
+    "agent-skills",
+    "mcp"
   ]
 }

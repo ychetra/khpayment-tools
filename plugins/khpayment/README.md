@@ -7,7 +7,7 @@ within those majors. No private service checkout or startup download is required
 From your application's root:
 
 ```sh
-npm install --save-dev @khpayment/plugin@1.0.0
+npm install --save-dev @khpayment/plugin@1.0.1
 
 # Claude Code
 claude plugin marketplace add ./node_modules/@khpayment/plugin

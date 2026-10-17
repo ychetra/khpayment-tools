@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.0.1
+
+- Add the KHPayment website, public source repository and relevant package keywords.
+- Keep the API and payment verification behavior unchanged.
+
 ## 1.0.0 — 2026-10-17
 
 - Standalone ESM package with bundled contract declarations and schemas.

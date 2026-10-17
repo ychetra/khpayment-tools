@@ -1,6 +1,6 @@
 {
   "name": "@khpayment/node",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Server-side Node.js and TypeScript client for the KHPayment merchant-link integration API.",
   "type": "module",
   "license": "SEE LICENSE IN LICENSE",
@@ -27,5 +27,22 @@
   "publishConfig": {
     "access": "public",
     "tag": "latest"
-  }
+  },
+  "homepage": "https://khpayment.com",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ychetra/khpayment-tools.git",
+    "directory": "packages/node"
+  },
+  "keywords": [
+    "khpayment",
+    "khqr",
+    "cambodia",
+    "payments",
+    "payment-integration",
+    "nodejs",
+    "typescript",
+    "sdk",
+    "webhooks"
+  ]
 }

@@ -1,6 +1,6 @@
 {
   "name": "khpayment",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Integrate checkout, bounded payment status and signed notifications with a shared skill and local MCP.",
   "author": {
     "name": "KHPayment"

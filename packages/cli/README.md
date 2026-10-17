@@ -7,7 +7,7 @@ proprietary license. The CLI needs an authorized API key and configured service.
 Install:
 
 ```sh
-npm install --save-dev @khpayment/cli@1.0.0
+npm install --save-dev @khpayment/cli@1.0.1
 npx khpayment --help
 ```
 
