@@ -1,20 +1,20 @@
 # KHPayment integration plugin
 
 Codex and Claude Code integration skill, with a self-contained local MCP runtime.
-Beta integration tools. Node 22.23.3 or 24.21.0 and later patches
+Integration tools. Node 22.23.3 or 24.21.0 and later patches
 within those majors. No private service checkout or startup download is required.
 
 From your application's root:
 
 ```sh
-npm install --save-dev @ychetra/khpayment-plugin@0.1.0-beta.1
+npm install --save-dev @khpayment/plugin@1.0.0
 
 # Claude Code
-claude plugin marketplace add ./node_modules/@ychetra/khpayment-plugin
+claude plugin marketplace add ./node_modules/@khpayment/plugin
 claude plugin install khpayment@khpayment
 
 # Codex
-codex plugin marketplace add ./node_modules/@ychetra/khpayment-plugin
+codex plugin marketplace add ./node_modules/@khpayment/plugin
 codex plugin add khpayment@khpayment
 ```
 
@@ -28,7 +28,7 @@ JSON containing `{ "baseUrl": "https://your-api.example", "apiKey": "..." }`
 from a private file or secret manager into:
 
 ```sh
-node node_modules/@ychetra/khpayment-plugin/plugins/khpayment/scripts/configure.mjs < /private/path/khpayment-input.json
+node node_modules/@khpayment/plugin/plugins/khpayment/scripts/configure.mjs < /private/path/khpayment-input.json
 ```
 
 The configuration is created exclusively at `~/.config/khpayment/plugin.json`

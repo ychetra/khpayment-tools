@@ -12,10 +12,10 @@
     "start": "next start --hostname 127.0.0.1 --port 3100"
   },
   "dependencies": {
-    "@ychetra/khpayment-node": "file:vendor/ychetra-khpayment-node-0.1.0-beta.1.tgz",
     "pg": "8.23.0",
     "next": "16.4.0",
     "react": "19.3.0",
-    "react-dom": "19.3.0"
+    "react-dom": "19.3.0",
+    "@khpayment/node": "file:vendor/khpayment-node-1.0.0.tgz"
   }
 }

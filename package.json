@@ -1,6 +1,6 @@
 {
-  "name": "@ychetra/khpayment-plugin",
-  "version": "0.1.0-beta.1",
+  "name": "@khpayment/plugin",
+  "version": "1.0.0",
   "type": "module",
   "license": "SEE LICENSE IN LICENSE",
   "engines": {
@@ -8,7 +8,7 @@
   },
   "publishConfig": {
     "access": "public",
-    "tag": "beta"
+    "tag": "latest"
   },
   "description": "Integrate checkout, bounded payment status and signed notifications with a shared skill and local MCP.",
   "files": [

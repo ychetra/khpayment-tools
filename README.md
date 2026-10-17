@@ -4,12 +4,12 @@ One integration. Your server, terminal or coding agent.
 
 | Tool | Package | Install |
 | --- | --- | --- |
-| Node.js / TypeScript | `@ychetra/khpayment-node` | `npm install @ychetra/khpayment-node@0.1.0-beta.1` |
-| CLI | `@ychetra/khpayment-cli` | `npm install --save-dev @ychetra/khpayment-cli@0.1.0-beta.1` |
-| MCP | `@ychetra/khpayment-mcp` | `npm install --save-dev @ychetra/khpayment-mcp@0.1.0-beta.1` |
-| Codex & Claude Code plugin | `@ychetra/khpayment-plugin` | `npm install --save-dev @ychetra/khpayment-plugin@0.1.0-beta.1` |
+| Node.js / TypeScript | `@khpayment/node` | `npm install @khpayment/node@1.0.0` |
+| CLI | `@khpayment/cli` | `npm install --save-dev @khpayment/cli@1.0.0` |
+| MCP | `@khpayment/mcp` | `npm install --save-dev @khpayment/mcp@1.0.0` |
+| Codex & Claude Code plugin | `@khpayment/plugin` | `npm install --save-dev @khpayment/plugin@1.0.0` |
 
-Beta developer tools. Node 22.23.3 or 24.21.0 and
+Developer tools. Node 22.23.3 or 24.21.0 and
 later patches in those majors. Server-side ESM; API keys stay on your server.
 
 ## Ask your agent
@@ -18,11 +18,11 @@ Install the plugin package in your application's root, then register it:
 
 ```sh
 # Claude Code
-claude plugin marketplace add ./node_modules/@ychetra/khpayment-plugin
+claude plugin marketplace add ./node_modules/@khpayment/plugin
 claude plugin install khpayment@khpayment
 
 # Codex
-codex plugin marketplace add ./node_modules/@ychetra/khpayment-plugin
+codex plugin marketplace add ./node_modules/@khpayment/plugin
 codex plugin add khpayment@khpayment
 ```
 
@@ -42,7 +42,7 @@ and code assistance. The plugin disables live creation.
 ## Build the payment flow
 
 ```js
-import {createClient} from '@ychetra/khpayment-node';
+import {createClient} from '@khpayment/node';
 const payments = createClient({
   baseUrl: process.env.KHPAYMENT_BASE_URL,
   apiKey: process.env.KHPAYMENT_API_KEY,
@@ -70,6 +70,42 @@ paid. KHPayment is independent integration software, not an official ABA SDK,
 bank or payment network. Signed notifications describe recorded observations,
 not official bank settlement. Public account access and live payment readiness
 are separate from installing these tools.
+
+## Upgrade from the earlier packages
+
+The earlier personal-scope packages remain available and unchanged. Move from
+`@ychetra/khpayment-node@beta` to `@khpayment/node@1.0.0`,
+and change your server-side SDK imports to `@khpayment/node`. The SDK
+API, stored order mappings and idempotency keys remain compatible.
+
+Install `@khpayment/cli`, `@khpayment/mcp` and
+`@khpayment/plugin` for the other tools. Remove the earlier CLI/MCP
+dependencies when switching: both generations use the same executable names.
+The native plugin identity `khpayment@khpayment` also stays the same, so an
+existing marketplace registration must be removed before adding its new path.
+
+After installing the new plugin package, existing Claude Code users run:
+
+```sh
+claude plugin uninstall khpayment@khpayment
+claude plugin marketplace remove khpayment
+claude plugin marketplace add ./node_modules/@khpayment/plugin
+claude plugin install khpayment@khpayment
+```
+
+Existing Codex users run:
+
+```sh
+codex plugin remove khpayment@khpayment
+codex plugin marketplace remove khpayment
+codex plugin marketplace add ./node_modules/@khpayment/plugin
+codex plugin add khpayment@khpayment
+```
+
+Keep your existing owner-only configuration, restart the agent and verify the
+new plugin before removing its earlier package dependency. Rerun your integration
+tests before removing the earlier SDK. Installing a stable package does not
+enable service registration, live payments or billing.
 
 ## License
 

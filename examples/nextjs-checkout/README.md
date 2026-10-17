@@ -1,6 +1,6 @@
 # KHPayment test checkout starter
 
-This private beta template is a complete synthetic shop checkout, not a production merchant application. It uses server-side orders, a stable idempotency key, a hosted checkout, short authorized status reads and an optional signed webhook receiver. No real goods are fulfilled. It is an unofficial public merchant-link integration, not an official ABA API or bank sandbox.
+This starter template is a complete synthetic shop checkout, not a production merchant application. It uses server-side orders, a stable idempotency key, a hosted checkout, short authorized status reads and an optional signed webhook receiver. No real goods are fulfilled. It is an unofficial public merchant-link integration, not an official ABA API or bank sandbox.
 
 ## Requirements
 
@@ -69,4 +69,4 @@ The receiver verifies the **original raw body**, HMAC, key ID, timestamp and tes
 
 Do not remove the test-only environment/evidence checks to launch this template. A production shop needs real account authorization, durable session ownership, its own database migrations and retention, verified TLS, monitored secret rotation and incidents, CSRF/security headers appropriate to its hosting, and idempotent fulfillment tied to sufficient live confirmation. This sample does not authorize real delivery. Never trust the return URL as proof of payment. The Next.js version deliberately performs one short server read per request rather than a ten-minute serverless polling loop.
 
-The prepared SDK beta remains unpublished and its licensing/scope approval is pending. This archive is for review and synthetic testing; it contains no owner identity, merchant link or usable credential.
+This archive contains a pinned SDK tarball for reproducible synthetic testing. The included license permits editing these examples and your own integration code. It contains no owner identity, merchant link or usable credential. Service account access and live-payment readiness remain separate.

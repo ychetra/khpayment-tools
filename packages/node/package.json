@@ -1,6 +1,6 @@
 {
-  "name": "@ychetra/khpayment-node",
-  "version": "0.1.0-beta.1",
+  "name": "@khpayment/node",
+  "version": "1.0.0",
   "description": "Server-side Node.js and TypeScript client for the KHPayment merchant-link integration API.",
   "type": "module",
   "license": "SEE LICENSE IN LICENSE",
@@ -26,6 +26,6 @@
   },
   "publishConfig": {
     "access": "public",
-    "tag": "beta"
+    "tag": "latest"
   }
 }

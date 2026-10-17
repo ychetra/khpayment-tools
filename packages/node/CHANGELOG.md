@@ -1,6 +1,6 @@
 # Changelog
 
-## 0.1.0-beta.1 — unreleased
+## 1.0.0 — 2026-10-17
 
 - Standalone ESM package with bundled contract declarations and schemas.
 - Explicit expected environment, cancellable reads and additive response fields.

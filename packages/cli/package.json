@@ -1,6 +1,6 @@
 {
-  "name": "@ychetra/khpayment-cli",
-  "version": "0.1.0-beta.1",
+  "name": "@khpayment/cli",
+  "version": "1.0.0",
   "type": "module",
   "license": "SEE LICENSE IN LICENSE",
   "engines": {
@@ -8,7 +8,7 @@
   },
   "publishConfig": {
     "access": "public",
-    "tag": "beta"
+    "tag": "latest"
   },
   "description": "Command-line payment creation and status tools for KHPayment.",
   "bin": {

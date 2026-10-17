@@ -24,7 +24,7 @@ function denied() {
     return result({ error: { code: 'CONFIRMATION_REQUIRED', message: 'Creation requires a fresh approval of this exact request in a host with human confirmation support.' } }, true);
 }
 export function createMcpServer(client, policy) {
-    const server = new McpServer({ name: 'khpayment', version: '0.1.0-beta.1' }, {
+    const server = new McpServer({ name: 'khpayment', version: '1.0.0' }, {
         instructions: 'Local payment integration tools. Test payments are simulated. Never infer paid from a scan, redirect or customer action. API keys belong only in the server process environment.',
         inputRequired: { maxRounds: 2, roundTimeoutMs: 120_000 },
         maxToolInputElements: 16,
@@ -95,7 +95,7 @@ if (isMain()) {
     if (process.argv.length === 3 && process.argv[2] === '--help')
         process.stdout.write('KHPayment MCP: local stdio server. Set KHPAYMENT_BASE_URL and KHPAYMENT_API_KEY privately. Live creation defaults off; payment creation requires host human confirmation.\n');
     else if (process.argv.length === 3 && process.argv[2] === '--version')
-        process.stdout.write('0.1.0-beta.1\n');
+        process.stdout.write('1.0.0\n');
     else
         try {
             const expectedEnvironment = process.env.KHPAYMENT_EXPECTED_ENVIRONMENT;

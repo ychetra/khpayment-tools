@@ -1,15 +1,15 @@
 # KHPayment for Node.js
 
-Beta server-side client `@ychetra/khpayment-node`.
+Server-side client `@khpayment/node`.
 KHPayment is an independent merchant-link integration service, not an official
 ABA SDK. A signed event confirms our recorded observation, not bank settlement.
 
 ```sh
-npm install @ychetra/khpayment-node@0.1.0-beta.1
+npm install @khpayment/node@1.0.0
 ```
 
 ```js
-import {createClient, waitForPayment} from '@ychetra/khpayment-node';
+import {createClient, waitForPayment} from '@khpayment/node';
 const payments = createClient({
   baseUrl: process.env.KHPAYMENT_BASE_URL,
   apiKey: process.env.KHPAYMENT_API_KEY,
@@ -53,7 +53,7 @@ currency, environment and verification before any idempotent fulfillment.
 ## Webhook receiver
 
 ```js
-import {verifyWebhook} from '@ychetra/khpayment-node';
+import {verifyWebhook} from '@khpayment/node';
 const event = verifyWebhook({
   body: rawBody, // Buffer/Uint8Array or exact UTF-8 string before JSON parsing
   signature: request.headers['khpayment-signature'],

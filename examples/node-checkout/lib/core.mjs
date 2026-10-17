@@ -1,6 +1,6 @@
 import {randomBytes,randomUUID,createHash} from 'node:crypto';
 import pg from 'pg';
-import {createClient,KhPaymentError,verifyWebhook} from '@ychetra/khpayment-node';
+import {createClient,KhPaymentError,verifyWebhook} from '@khpayment/node';
 
 // Illustrative shop, deliberately TEST ONLY. Replace the session/catalogue with
 // your real application authorization; never derive an authoritative price from a request.

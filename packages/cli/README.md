@@ -1,13 +1,13 @@
 # KHPayment CLI
 
-Beta command-line payment tools. Node 22.23.3 or
+Command-line payment tools. Node 22.23.3 or
 24.21.0 and later patches within those majors. Free use under the included
 proprietary license. The CLI needs an authorized API key and configured service.
 
 Install:
 
 ```sh
-npm install --save-dev @ychetra/khpayment-cli@0.1.0-beta.1
+npm install --save-dev @khpayment/cli@1.0.0
 npx khpayment --help
 ```
 

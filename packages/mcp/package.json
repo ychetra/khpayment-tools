@@ -1,6 +1,6 @@
 {
-  "name": "@ychetra/khpayment-mcp",
-  "version": "0.1.0-beta.1",
+  "name": "@khpayment/mcp",
+  "version": "1.0.0",
   "type": "module",
   "license": "SEE LICENSE IN LICENSE",
   "engines": {
@@ -8,7 +8,7 @@
   },
   "publishConfig": {
     "access": "public",
-    "tag": "beta"
+    "tag": "latest"
   },
   "description": "Local stdio MCP payment tools with exact-request human confirmation.",
   "bin": {
