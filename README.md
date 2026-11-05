@@ -71,6 +71,13 @@ bank or payment network. Signed notifications describe recorded observations,
 not official bank settlement. Public account access and live payment readiness
 are separate from installing these tools.
 
+## Developer guides
+
+- [A QR scan is not payment confirmation](guides/qr-scan-is-not-payment-confirmation.md):
+  server-owned orders, safe retries, verified results and fulfilment that happens once.
+- [Integration documentation](https://khpayment.com/docs): the request contract,
+  payment evidence and current access requirements.
+
 ## Upgrade from the earlier packages
 
 The earlier personal-scope packages remain available and unchanged. Move from
